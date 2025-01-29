@@ -1,0 +1,20 @@
+user bool goh_showberserk = true;
+user bool goh_showarmortype = true;
+user bool goh_showpoweruptimers = true;
+user bool goh_showplayername = true;
+user bool goh_showweaponbar = true;
+user bool goh_showarmorclass = false;
+user bool goh_showweaponname = true;
+user bool goh_showarmorsavepercent = true;
+user bool goh_colorhealthoninvuln = true;
+user bool goh_alwaysshowinventorycounter = false;
+user bool goh_showairtimer = true;
+user int goh_theme = 0;
+user bool goh_showtimer = true;
+user bool goh_bargradients = false;
+user bool goh_showammocapacities = true;
+user bool goh_showmonstercounter = true;
+user bool goh_showsecretcounter = true;
+user bool goh_showitemcounter = true;
+
+// Other CVars defined via lump filtering.

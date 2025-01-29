@@ -1,0 +1,4 @@
+user bool goh_showmugshot = false;
+user bool goh_showcoincounter = false;
+user bool goh_showstamina = false;
+user bool goh_showaccuracy = false;

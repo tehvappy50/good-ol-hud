@@ -1,0 +1,6 @@
+[eng enc ena enz eni ens enj enb enl ent enw]
+
+GOODOLHUD_MENU_SHOWARMORTYPE = "Show Armour Type Icon";
+GOODOLHUD_MENU_SHOWARMORCLASS = "Show Armour Class Value";
+GOODOLHUD_MENU_SHOWARMORSAVEPERCENT = "Show Armour Damage Absorption Percentage";
+GOODOLHUD_MENU_COLORHEALTHONINVULN = "Colour Health Bar/Text When Invulnerable";
