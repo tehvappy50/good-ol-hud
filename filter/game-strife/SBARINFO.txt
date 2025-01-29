@@ -1,5 +1,5 @@
 Base None;
-//Height 32;
+Height 0;
 MonospaceFonts true, "0";
 InterpolateHealth false;
 InterpolateArmor false;
