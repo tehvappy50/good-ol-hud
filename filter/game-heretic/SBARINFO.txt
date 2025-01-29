@@ -873,11 +873,11 @@ StatusBar Fullscreen, FullscreenOffsets
 
     IfCVarInt goh_alwaysshowinventorycounter, 1, equal
     {
-        IfCVarInt goh_showweaponname, 1, equal { DrawSelectedInventory AlwaysShowCounter, INDEXFON, -253, -57, -217, -32, White; }
-        else { DrawSelectedInventory AlwaysShowCounter, INDEXFON, -253, -41, -217, -16, White; }
+        IfCVarInt goh_showweaponname, 1, equal { DrawSelectedInventory AlwaysShowCounter, INDEXFONT, -253, -57, -217, -32, White; }
+        else { DrawSelectedInventory AlwaysShowCounter, INDEXFONT, -253, -41, -217, -16, White; }
     } else {
-        IfCVarInt goh_showweaponname, 1, equal { DrawSelectedInventory INDEXFON, -253, -57, -217, -32, White; }
-        else { DrawSelectedInventory INDEXFON, -253, -41, -217, -16, White; }
+        IfCVarInt goh_showweaponname, 1, equal { DrawSelectedInventory INDEXFONT, -253, -57, -217, -32, White; }
+        else { DrawSelectedInventory INDEXFONT, -253, -41, -217, -16, White; }
     }
 
     IfCVarInt goh_showweaponbar, 1, equal
@@ -10421,6 +10421,6 @@ StatusBar Fullscreen, FullscreenOffsets
 
 StatusBar InventoryFullScreen
 {
-    IfCVarInt goh_alwaysshowinventorycounter, 1, equal { DrawInventoryBar Heretic, AlwaysShowCounter, 7, INDEXFON, 50, 170, 76, 192, White; }
-    else { DrawInventoryBar Heretic, 7, INDEXFON, 50, 170, 76, 192, White; }
+    IfCVarInt goh_alwaysshowinventorycounter, 1, equal { DrawInventoryBar Heretic, AlwaysShowCounter, 7, INDEXFONT, 50, 170, 76, 192, White; }
+    else { DrawInventoryBar Heretic, 7, INDEXFONT, 50, 170, 76, 192, White; }
 }
