@@ -50,6 +50,24 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", LightBlue, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", LightBlue, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
+                } else WeaponAmmo ID24Fuel {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
+                } else WeaponAmmo PhoenixRodAmmo {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
+                } else WeaponAmmo PhosphorusGrenadeRounds {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
                 } else WeaponAmmo CrossbowAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_green.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_green.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
@@ -86,24 +104,6 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
-                } else WeaponAmmo ID24Fuel {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
-                } else WeaponAmmo PhoenixRodAmmo {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
-                } else WeaponAmmo PhosphorusGrenadeRounds {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
                 } else WeaponAmmo MaceAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_gray.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_gray.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
@@ -164,6 +164,24 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", LightBlue, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", LightBlue, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
+                } else WeaponAmmo ID24Fuel {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
+                } else WeaponAmmo PhoenixRodAmmo {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
+                } else WeaponAmmo PhosphorusGrenadeRounds {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
                 } else WeaponAmmo CrossbowAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_green.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_green.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
@@ -200,24 +218,6 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
-                } else WeaponAmmo ID24Fuel {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
-                } else WeaponAmmo PhoenixRodAmmo {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
-                } else WeaponAmmo PhosphorusGrenadeRounds {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
                 } else WeaponAmmo MaceAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_gray.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_gray.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
@@ -355,6 +355,24 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", LightBlue, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", LightBlue, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
+                } else WeaponAmmo ID24Fuel {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
+                } else WeaponAmmo PhoenixRodAmmo {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
+                } else WeaponAmmo PhosphorusGrenadeRounds {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
                 } else WeaponAmmo CrossbowAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_green.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_green.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
@@ -391,24 +409,6 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
-                } else WeaponAmmo ID24Fuel {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
-                } else WeaponAmmo PhoenixRodAmmo {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
-                } else WeaponAmmo PhosphorusGrenadeRounds {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
                 } else WeaponAmmo MaceAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_gray.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_gray.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
@@ -481,6 +481,24 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", LightBlue, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", LightBlue, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
+                } else WeaponAmmo ID24Fuel {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
+                } else WeaponAmmo PhoenixRodAmmo {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
+                } else WeaponAmmo PhosphorusGrenadeRounds {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
                 } else WeaponAmmo CrossbowAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_green.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_green.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
@@ -517,24 +535,6 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
-                } else WeaponAmmo ID24Fuel {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
-                } else WeaponAmmo PhoenixRodAmmo {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
-                } else WeaponAmmo PhosphorusGrenadeRounds {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
                 } else WeaponAmmo MaceAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_gray.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_gray.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
@@ -4159,9 +4159,9 @@ StatusBar Fullscreen, FullscreenOffsets
                 {
                     IfCVarInt goh_showarmorsavepercent, 1, equal
                     {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -4295,13 +4295,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -89; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -89; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -89; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -89; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -87; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -87; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -87; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -87; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -105, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -105, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -89; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -89; }
@@ -4376,9 +4376,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else IfCVarInt goh_showstamina, 1, equal {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -4512,13 +4512,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -89; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -89; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -89; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -89; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -87; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -87; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -87; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -87; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -105, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -105, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -89; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -89; }
@@ -4593,9 +4593,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else IfCVarInt goh_showaccuracy, 1, equal {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -89, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -4729,13 +4729,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -89; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -89; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -89; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -89; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -87; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -87; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -87; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -87; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -105, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -105, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -89; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -89; }
@@ -4810,9 +4810,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -4946,13 +4946,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -73; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -73; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -73; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -73; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -71; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -71; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -71; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -71; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -89, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -89, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -73; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -73; }
@@ -5030,9 +5030,9 @@ StatusBar Fullscreen, FullscreenOffsets
                 } else {
                     IfCVarInt goh_showstamina, 1, equal
                     {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -5166,13 +5166,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -73; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -73; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -73; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -73; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -71; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -71; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -71; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -71; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -89, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -89, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -73; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -73; }
@@ -5247,9 +5247,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else IfCVarInt goh_showaccuracy, 1, equal {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -5383,13 +5383,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -73; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -73; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -73; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -73; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -71; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -71; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -71; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -71; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -89, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -89, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -73; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -73; }
@@ -5464,9 +5464,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 60, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 60, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 60, -57, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 60, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 60, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 60, -57, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -5600,13 +5600,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -57; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -57; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -57; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -57; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -55; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -55; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -55; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -55; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -73, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -73, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -57; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -57; }
@@ -5687,9 +5687,9 @@ StatusBar Fullscreen, FullscreenOffsets
                 {
                     IfCVarInt goh_showarmorsavepercent, 1, equal
                     {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -5823,13 +5823,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -73; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -73; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -73; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -73; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -71; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -71; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -71; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -71; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -89, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -89, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -73; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -73; }
@@ -5904,9 +5904,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else IfCVarInt goh_showstamina, 1, equal {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -6040,13 +6040,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -73; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -73; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -73; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -73; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -71; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -71; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -71; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -71; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -89, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -89, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -73; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -73; }
@@ -6121,9 +6121,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else IfCVarInt goh_showaccuracy, 1, equal {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -73, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -6257,13 +6257,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -73; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -73; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -73; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -73; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -71; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -71; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -71; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -71; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -89, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -89, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -73; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -73; }
@@ -6338,9 +6338,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -6474,13 +6474,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -57; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -57; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -57; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -57; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -55; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -55; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -55; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -55; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -73, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -73, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -57; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -57; }
@@ -6558,9 +6558,9 @@ StatusBar Fullscreen, FullscreenOffsets
                 } else {
                     IfCVarInt goh_showstamina, 1, equal
                     {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -6694,13 +6694,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -57; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -57; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -57; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -57; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -55; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -55; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -55; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -55; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -73, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -73, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -57; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -57; }
@@ -6775,9 +6775,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else IfCVarInt goh_showaccuracy, 1, equal {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS", 60, -57, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -6911,13 +6911,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -57; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -57; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -57; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -57; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -55; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -55; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -55; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -55; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -73, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -73, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -57; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -57; }
@@ -6992,9 +6992,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 60, -41, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 60, -41, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 60, -41, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 60, -41, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 60, -41, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 60, -41, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -7128,13 +7128,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 154, -41; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 154, -41; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 155, -41; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 155, -41; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 156, -39; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 156, -39; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 157, -39; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 157, -39; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 159, -57, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 160, -57, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 132, -41; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 132, -41; }
@@ -7218,9 +7218,9 @@ StatusBar Fullscreen, FullscreenOffsets
                 {
                     IfCVarInt goh_showarmorsavepercent, 1, equal
                     {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -7354,13 +7354,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -89; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -89; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -89; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -89; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -87; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -87; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -87; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -87; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -105, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -105, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -89; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -89; }
@@ -7435,9 +7435,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else IfCVarInt goh_showstamina, 1, equal {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -7571,13 +7571,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -89; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -89; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -89; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -89; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -87; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -87; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -87; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -87; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -105, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -105, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -89; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -89; }
@@ -7652,9 +7652,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else IfCVarInt goh_showaccuracy, 1, equal {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -89, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -7788,13 +7788,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -89; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -89; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -89; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -89; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -87; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -87; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -87; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -87; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -105, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -105, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -89; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -89; }
@@ -7869,9 +7869,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -8005,13 +8005,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -73; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -73; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -73; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -73; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -71; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -71; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -71; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -71; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -89, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -89, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -73; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -73; }
@@ -8089,9 +8089,9 @@ StatusBar Fullscreen, FullscreenOffsets
                 } else {
                     IfCVarInt goh_showstamina, 1, equal
                     {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -8225,13 +8225,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -73; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -73; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -73; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -73; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -71; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -71; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -71; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -71; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -89, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -89, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -73; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -73; }
@@ -8306,9 +8306,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else IfCVarInt goh_showaccuracy, 1, equal {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -8442,13 +8442,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -73; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -73; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -73; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -73; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -71; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -71; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -71; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -71; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -89, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -89, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -73; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -73; }
@@ -8523,9 +8523,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -8659,13 +8659,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -57; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -57; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -57; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -57; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -55; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -55; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -55; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -55; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -73, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -73, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -57; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -57; }
@@ -8746,9 +8746,9 @@ StatusBar Fullscreen, FullscreenOffsets
                 {
                     IfCVarInt goh_showarmorsavepercent, 1, equal
                     {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -8882,13 +8882,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -73; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -73; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -73; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -73; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -71; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -71; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -71; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -71; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -89, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -89, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -73; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -73; }
@@ -8963,9 +8963,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else IfCVarInt goh_showstamina, 1, equal {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -9099,13 +9099,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -73; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -73; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -73; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -73; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -71; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -71; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -71; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -71; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -89, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -89, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -73; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -73; }
@@ -9180,9 +9180,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else IfCVarInt goh_showaccuracy, 1, equal {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -73, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -9316,13 +9316,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -73; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -73; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -73; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -73; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -71; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -71; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -71; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -71; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -89, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -89, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -73; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -73; }
@@ -9397,9 +9397,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -9533,13 +9533,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -57; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -57; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -57; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -57; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -55; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -55; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -55; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -55; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -73, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -73, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -57; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -57; }
@@ -9617,9 +9617,9 @@ StatusBar Fullscreen, FullscreenOffsets
                 } else {
                     IfCVarInt goh_showstamina, 1, equal
                     {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -9753,13 +9753,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -57; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -57; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -57; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -57; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -55; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -55; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -55; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -55; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -73, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -73, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -57; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -57; }
@@ -9834,9 +9834,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else IfCVarInt goh_showaccuracy, 1, equal {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -57, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -9970,13 +9970,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -57; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -57; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -57; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -57; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -55; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -55; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -55; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -55; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -73, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -73, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -57; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -57; }
@@ -10051,9 +10051,9 @@ StatusBar Fullscreen, FullscreenOffsets
                             }
                         }
                     } else {
-                        InInventory PowerInvulnerable || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -41, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerTorch || PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -41, 2, DrawShadow, Alignment(Right); }
-                        else InInventory PowerFlight { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -41, 2, DrawShadow, Alignment(Right); }
+                        InInventory PowerFlight || PowerGhost { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -41, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerInvulnerable || PowerTorch { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -41, 2, DrawShadow, Alignment(Right); }
+                        else InInventory PowerWeaponLevel2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_POWERUPS_SHORT", 20, -41, 2, DrawShadow, Alignment(Right); }
 
                         InInventory PowerInvulnerable
                         {
@@ -10187,13 +10187,13 @@ StatusBar Fullscreen, FullscreenOffsets
                             {
                                 InInventory PowerWeaponLevel2 && PowerInvulnerable
                                 {
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 114, -41; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 114, -41; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 115, -41; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 115, -41; }
 
-                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 116, -39; }
-                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 116, -39; }
+                                    IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 117, -39; }
+                                    else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_gray.png", 117, -39; }
 
-                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 119, -57, 2;
+                                    DrawNumber 4, "fonts/goodolhud_font.bmf", Gray, PowerupTime ArtiInvisibility, DrawShadow, Alignment(Center), 120, -57, 2;
                                 } else InInventory PowerWeaponLevel2 || PowerInvulnerable {
                                     IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/timers/goodolhud_timer_base.png", 92, -41; }
                                     else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/timers/goodolhud_timer_base.png", 92, -41; }

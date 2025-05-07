@@ -50,6 +50,24 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", LightBlue, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", LightBlue, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
+                } else WeaponAmmo ID24Fuel {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
+                } else WeaponAmmo PhoenixRodAmmo {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
+                } else WeaponAmmo PhosphorusGrenadeRounds {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
                 } else WeaponAmmo CrossbowAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_green.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_green.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
@@ -86,24 +104,6 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
-                } else WeaponAmmo ID24Fuel {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
-                } else WeaponAmmo PhoenixRodAmmo {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
-                } else WeaponAmmo PhosphorusGrenadeRounds {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -41, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -41, 2;
                 } else WeaponAmmo MaceAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_gray.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_gray.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
@@ -164,6 +164,24 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", LightBlue, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", LightBlue, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
+                } else WeaponAmmo ID24Fuel {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
+                } else WeaponAmmo PhoenixRodAmmo {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
+                } else WeaponAmmo PhosphorusGrenadeRounds {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
                 } else WeaponAmmo CrossbowAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_green.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_green.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
@@ -200,24 +218,6 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
-                } else WeaponAmmo ID24Fuel {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
-                } else WeaponAmmo PhoenixRodAmmo {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
-                } else WeaponAmmo PhosphorusGrenadeRounds {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO1", -199, -25, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, DrawShadow, Alignment(Left), -38, -25, 2;
                 } else WeaponAmmo MaceAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_gray.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_gray.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -27; }
@@ -355,6 +355,24 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", LightBlue, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", LightBlue, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
+                } else WeaponAmmo ID24Fuel {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
+                } else WeaponAmmo PhoenixRodAmmo {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
+                } else WeaponAmmo PhosphorusGrenadeRounds {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
                 } else WeaponAmmo CrossbowAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_green.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_green.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
@@ -391,24 +409,6 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
-                } else WeaponAmmo ID24Fuel {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
-                } else WeaponAmmo PhoenixRodAmmo {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
-                } else WeaponAmmo PhosphorusGrenadeRounds {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -57, 2;
                 } else WeaponAmmo MaceAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_gray.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_gray.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -59; }
@@ -481,6 +481,24 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", LightBlue, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", LightBlue, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
+                } else WeaponAmmo ID24Fuel {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
+                } else WeaponAmmo PhoenixRodAmmo {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
+                } else WeaponAmmo PhosphorusGrenadeRounds {
+                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
+                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
+
+                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
+                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
                 } else WeaponAmmo CrossbowAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_green.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_green.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
@@ -517,24 +535,6 @@ StatusBar Fullscreen, FullscreenOffsets
 
                     DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
                     DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
-                } else WeaponAmmo ID24Fuel {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
-                } else WeaponAmmo PhoenixRodAmmo {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
-                } else WeaponAmmo PhosphorusGrenadeRounds {
-                    IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
-                    else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
-
-                    DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, DrawShadow, Alignment(Right);
-                    DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo2, DrawShadow, Alignment(Left), -38, -41, 2;
                 } else WeaponAmmo MaceAmmo {
                     IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_gray.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
                     else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_gray.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo2, Horizontal, -192, -43; }
