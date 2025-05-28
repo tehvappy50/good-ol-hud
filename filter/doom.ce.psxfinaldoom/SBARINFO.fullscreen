@@ -990,9 +990,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -58; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -58; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -58; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -58; }
 
@@ -1004,6 +1001,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 221, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 221, -58; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -58; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -58; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 237, -57, 2;
                     }
@@ -1112,9 +1112,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -58; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -58; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -58; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -58; }
 
@@ -1126,6 +1123,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 221, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 221, -58; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -58; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -58; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 237, -57, 2;
                     }
@@ -1234,9 +1234,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -58; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -58; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -58; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -58; }
 
@@ -1248,6 +1245,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 221, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 221, -58; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -58; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -58; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 237, -57, 2;
                     }
@@ -1356,9 +1356,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
 
@@ -1370,6 +1367,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 221, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 221, -42; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 237, -41, 2;
                     }
@@ -1712,8 +1712,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -58; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -58; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -58; }
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -58; }
@@ -1726,6 +1724,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 181, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 181, -58; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -58; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -58; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 197, -57, 2;
                     }
@@ -1834,9 +1835,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -58; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -58; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -58; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -58; }
 
@@ -1848,6 +1846,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 181, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 181, -58; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -58; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -58; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 197, -57, 2;
                     }
@@ -1956,9 +1957,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -58; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -58; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -58; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -58; }
 
@@ -1970,6 +1968,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 181, -58; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 181, -58; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -58; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -58; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 197, -57, 2;
                     }
@@ -2078,9 +2079,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
 
@@ -2092,6 +2090,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 181, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 181, -42; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 197, -41, 2;
                     }
@@ -2437,9 +2438,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
 
@@ -2451,6 +2449,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 221, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 221, -42; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 237, -41, 2;
                     }
@@ -2559,9 +2560,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
 
@@ -2573,6 +2571,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 221, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 221, -42; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 237, -41, 2;
                     }
@@ -2681,9 +2682,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
 
@@ -2695,6 +2693,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 221, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 221, -42; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -42; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -42; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 237, -41, 2;
                     }
@@ -2803,9 +2804,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -26; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -26; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -26; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -26; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -26; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -26; }
 
@@ -2817,6 +2815,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 221, -26; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 221, -26; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 221, -26; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 221, -26; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 237, -25, 2;
                     }
@@ -3159,9 +3160,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
 
@@ -3173,6 +3171,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 181, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 181, -42; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 197, -41, 2;
                     }
@@ -3281,9 +3282,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
 
@@ -3295,6 +3293,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 181, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 181, -42; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 197, -41, 2;
                     }
@@ -3403,9 +3404,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
 
@@ -3417,6 +3415,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 181, -42; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 181, -42; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -42; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -42; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 197, -41, 2;
                     }
@@ -3525,9 +3526,6 @@ StatusBar Fullscreen, FullscreenOffsets
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -26; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -26; }
 
-                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -26; }
-                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -26; }
-
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -26; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType BlueArmorForMegasphere, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -26; }
 
@@ -3539,6 +3537,9 @@ StatusBar Fullscreen, FullscreenOffsets
 
                         IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 181, -26; }
                         else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType MetalArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorsilver.png", 181, -26; }
+
+                        IfCVarInt not goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme0/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 181, -26; }
+                        else IfCVarInt goh_theme, 1 { DrawSwitchableImage ArmorType PsxBlueArmor, "graphics/hud/theme1/icons/goodolhud_icon_armorblank.png", "graphics/hud/theme1/icons/goodolhud_icon_armorblue.png", 181, -26; }
 
                         DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Armor, Alignment(Left), DrawShadow, 197, -25, 2;
                     }
