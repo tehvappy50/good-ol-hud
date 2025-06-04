@@ -3,8 +3,9 @@ StatusBar Fullscreen, FullscreenOffsets
     // Bottom right.
 
     // Primary ammo
-    IsSelected not "FWeapQuietus", "CWeapWraithverge" {
-    IsSelected not "MWeapBloodscourge"
+    IsSelected not FWeapQuietus, CWeapWraithverge {
+    IsSelected not MWeapBloodscourge, StrifeCrossbow2 {
+    IsSelected not StrifeGrenadeLauncher2
     {
         UsesAmmo
         {
@@ -239,9 +240,9 @@ StatusBar Fullscreen, FullscreenOffsets
                 }
             }
         }
-    }}
+    }}}
 
-    IsSelected "FWeapQuietus", "CWeapWraithverge"
+    IsSelected FWeapQuietus, CWeapWraithverge
     {
         IfCVarInt goh_showweaponname, 1, equal
         {
@@ -265,7 +266,7 @@ StatusBar Fullscreen, FullscreenOffsets
         }
     }
 
-    IsSelected "MWeapBloodscourge"
+    IsSelected MWeapBloodscourge
     {
         IfCVarInt goh_showweaponname, 1, equal
         {
@@ -286,12 +287,60 @@ StatusBar Fullscreen, FullscreenOffsets
 
             DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMO1", -199, -25, 2, Alignment(Right), DrawShadow;
             DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo1, Alignment(Left), DrawShadow, -38, -25, 2;
+        }
+    }
+
+    IsSelected StrifeCrossbow2
+    {
+        IfCVarInt goh_showweaponname, 1, equal
+        {
+            IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/bars/goodolhud_bar_base.png", -193, -44; }
+            else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/bars/goodolhud_bar_base.png", -193, -44; }
+
+            IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_blue.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo ElectricBolts, Horizontal, -192, -43; }
+            else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_blue.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo ElectricBolts, Horizontal, -192, -43; }
+
+            DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMO1", -199, -41, 2, Alignment(Right), DrawShadow;
+            DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo ElectricBolts, Alignment(Left), DrawShadow, -38, -41, 2;
+        } else {
+            IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/bars/goodolhud_bar_base.png", -193, -28; }
+            else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/bars/goodolhud_bar_base.png", -193, -28; }
+
+            IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_blue.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo ElectricBolts, Horizontal, -192, -27; }
+            else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_blue.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo ElectricBolts, Horizontal, -192, -27; }
+
+            DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMO1", -199, -25, 2, Alignment(Right), DrawShadow;
+            DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo ElectricBolts, Alignment(Left), DrawShadow, -38, -25, 2;
+        }
+    }
+
+    IsSelected StrifeGrenadeLauncher2
+    {
+        IfCVarInt goh_showweaponname, 1, equal
+        {
+            IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/bars/goodolhud_bar_base.png", -193, -44; }
+            else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/bars/goodolhud_bar_base.png", -193, -44; }
+
+            IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_orange.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo HEGrenadeRounds, Horizontal, -192, -43; }
+            else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_orange.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo HEGrenadeRounds, Horizontal, -192, -43; }
+
+            DrawString "fonts/goodolhud_font.bmf", Orange, "$GOODOLHUD_AMMO1", -199, -41, 2, Alignment(Right), DrawShadow;
+            DrawNumber 4, "fonts/goodolhud_font.bmf", Orange, Ammo HEGrenadeRounds, Alignment(Left), DrawShadow, -38, -41, 2;
+        } else {
+            IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/bars/goodolhud_bar_base.png", -193, -28; }
+            else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/bars/goodolhud_bar_base.png", -193, -28; }
+
+            IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_orange.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo HEGrenadeRounds, Horizontal, -192, -27; }
+            else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_orange.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo HEGrenadeRounds, Horizontal, -192, -27; }
+
+            DrawString "fonts/goodolhud_font.bmf", Orange, "$GOODOLHUD_AMMO1", -199, -25, 2, Alignment(Right), DrawShadow;
+            DrawNumber 4, "fonts/goodolhud_font.bmf", Orange, Ammo HEGrenadeRounds, Alignment(Left), DrawShadow, -38, -25, 2;
         }
     }
 
     // Secondary ammo
-    IsSelected not "FWeapQuietus", "CWeapWraithverge" {
-    IsSelected not "MWeapBloodscourge"
+    IsSelected not FWeapQuietus, CWeapWraithverge {
+    IsSelected not MWeapBloodscourge
     {
         UsesSecondaryAmmo
         {
@@ -552,7 +601,7 @@ StatusBar Fullscreen, FullscreenOffsets
         }
     }}
 
-    IsSelected "FWeapQuietus", "CWeapWraithverge"
+    IsSelected FWeapQuietus, CWeapWraithverge
     {
         IfCVarInt goh_showweaponname, 1, equal
         {
@@ -576,7 +625,7 @@ StatusBar Fullscreen, FullscreenOffsets
         }
     }
 
-    IsSelected "MWeapBloodscourge"
+    IsSelected MWeapBloodscourge
     {
         IfCVarInt goh_showweaponname, 1, equal
         {
@@ -597,6 +646,102 @@ StatusBar Fullscreen, FullscreenOffsets
 
             DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_AMMO2", -199, -41, 2, Alignment(Right), DrawShadow;
             DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Ammo2, Alignment(Left), DrawShadow, -38, -41, 2;
+        }
+    }
+
+    IsSelected StrifeCrossbow
+    {
+        IfCVarInt goh_showweaponname, 1, equal
+        {
+            IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/bars/goodolhud_bar_base.png", -193, -60; }
+            else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/bars/goodolhud_bar_base.png", -193, -60; }
+
+            IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_green.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo PoisonBolts, Horizontal, -192, -59; }
+            else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_green.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo PoisonBolts, Horizontal, -192, -59; }
+
+            DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_AMMO2", -199, -57, 2, Alignment(Right), DrawShadow;
+            DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Ammo PoisonBolts, Alignment(Left), DrawShadow, -38, -57, 2;
+        } else {
+            IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/bars/goodolhud_bar_base.png", -193, -44; }
+            else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/bars/goodolhud_bar_base.png", -193, -44; }
+
+            IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_green.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo PoisonBolts, Horizontal, -192, -43; }
+            else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_green.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo PoisonBolts, Horizontal, -192, -43; }
+
+            DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_AMMO2", -199, -41, 2, Alignment(Right), DrawShadow;
+            DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Ammo PoisonBolts, Alignment(Left), DrawShadow, -38, -41, 2;
+        }
+    }
+
+    IsSelected StrifeCrossbow2
+    {
+        IfCVarInt goh_showweaponname, 1, equal
+        {
+            IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/bars/goodolhud_bar_base.png", -193, -60; }
+            else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/bars/goodolhud_bar_base.png", -193, -60; }
+
+            IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_green.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -59; }
+            else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_green.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -59; }
+
+            DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_AMMO2", -199, -57, 2, Alignment(Right), DrawShadow;
+            DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Ammo1, Alignment(Left), DrawShadow, -38, -57, 2;
+        } else {
+            IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/bars/goodolhud_bar_base.png", -193, -44; }
+            else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/bars/goodolhud_bar_base.png", -193, -44; }
+
+            IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_green.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+            else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_green.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+
+            DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_AMMO2", -199, -41, 2, Alignment(Right), DrawShadow;
+            DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Ammo1, Alignment(Left), DrawShadow, -38, -41, 2;
+        }
+    }
+
+    IsSelected StrifeGrenadeLauncher
+    {
+        IfCVarInt goh_showweaponname, 1, equal
+        {
+            IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/bars/goodolhud_bar_base.png", -193, -60; }
+            else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/bars/goodolhud_bar_base.png", -193, -60; }
+
+            IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo PhosphorusGrenadeRounds, Horizontal, -192, -59; }
+            else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo PhosphorusGrenadeRounds, Horizontal, -192, -59; }
+
+            DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, Alignment(Right), DrawShadow;
+            DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo PhosphorusGrenadeRounds, Alignment(Left), DrawShadow, -38, -57, 2;
+        } else {
+            IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/bars/goodolhud_bar_base.png", -193, -44; }
+            else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/bars/goodolhud_bar_base.png", -193, -44; }
+
+            IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo PhosphorusGrenadeRounds, Horizontal, -192, -43; }
+            else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo PhosphorusGrenadeRounds, Horizontal, -192, -43; }
+
+            DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, Alignment(Right), DrawShadow;
+            DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo PhosphorusGrenadeRounds, Alignment(Left), DrawShadow, -38, -41, 2;
+        }
+    }
+
+    IsSelected StrifeGrenadeLauncher2
+    {
+        IfCVarInt goh_showweaponname, 1, equal
+        {
+            IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/bars/goodolhud_bar_base.png", -193, -60; }
+            else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/bars/goodolhud_bar_base.png", -193, -60; }
+
+            IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -59; }
+            else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -59; }
+
+            DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -57, 2, Alignment(Right), DrawShadow;
+            DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, Alignment(Left), DrawShadow, -38, -57, 2;
+        } else {
+            IfCVarInt not goh_theme, 1 { DrawImage "graphics/hud/theme0/bars/goodolhud_bar_base.png", -193, -44; }
+            else IfCVarInt goh_theme, 1 { DrawImage "graphics/hud/theme1/bars/goodolhud_bar_base.png", -193, -44; }
+
+            IfCVarInt not goh_theme, 1 { DrawBar "graphics/hud/theme0/bars/goodolhud_bar_fire.png", "graphics/hud/theme0/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+            else IfCVarInt goh_theme, 1 { DrawBar "graphics/hud/theme1/bars/goodolhud_bar_fire.png", "graphics/hud/theme1/bars/goodolhud_bar_blank.png", Ammo1, Horizontal, -192, -43; }
+
+            DrawString "fonts/goodolhud_font.bmf", Fire, "$GOODOLHUD_AMMO2", -199, -41, 2, Alignment(Right), DrawShadow;
+            DrawNumber 4, "fonts/goodolhud_font.bmf", Fire, Ammo1, Alignment(Left), DrawShadow, -38, -41, 2;
         }
     }
 
@@ -605,8 +750,26 @@ StatusBar Fullscreen, FullscreenOffsets
     {
         IfCVarInt goh_showammocapacities, 1, equal
         {
-            UsesSecondaryAmmo
+            IsSelected StrifeCrossbow, StrifeCrossbow2
             {
+                IfCVarInt goh_showweaponname, 1, equal
+                {
+                    DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_MONEY", -207, -105, 2, Alignment(Right), DrawShadow;
+                    DrawNumber 10, "fonts/goodolhud_font.bmf", Green, Coin, Alignment(Left), DrawShadow, -207, -105, 2;
+                } else {
+                    DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_MONEY", -207, -89, 2, Alignment(Right), DrawShadow;
+                    DrawNumber 10, "fonts/goodolhud_font.bmf", Green, Coin, Alignment(Left), DrawShadow, -207, -89, 2;
+                }
+            } else IsSelected StrifeGrenadeLauncher, StrifeGrenadeLauncher2 {
+                IfCVarInt goh_showweaponname, 1, equal
+                {
+                    DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_MONEY", -207, -105, 2, Alignment(Right), DrawShadow;
+                    DrawNumber 10, "fonts/goodolhud_font.bmf", Green, Coin, Alignment(Left), DrawShadow, -207, -105, 2;
+                } else {
+                    DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_MONEY", -207, -89, 2, Alignment(Right), DrawShadow;
+                    DrawNumber 10, "fonts/goodolhud_font.bmf", Green, Coin, Alignment(Left), DrawShadow, -207, -89, 2;
+                }
+            } else UsesSecondaryAmmo {
                 IfCVarInt goh_showweaponname, 1, equal
                 {
                     DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_MONEY", -207, -105, 2, Alignment(Right), DrawShadow;
@@ -635,8 +798,26 @@ StatusBar Fullscreen, FullscreenOffsets
                 }
             }
         } else {
-            UsesSecondaryAmmo
+            IsSelected StrifeCrossbow, StrifeCrossbow2
             {
+                IfCVarInt goh_showweaponname, 1, equal
+                {
+                    DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_MONEY", -207, -73, 2, Alignment(Right), DrawShadow;
+                    DrawNumber 10, "fonts/goodolhud_font.bmf", Green, Coin, Alignment(Left), DrawShadow, -207, -73, 2;
+                } else {
+                    DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_MONEY", -207, -57, 2, Alignment(Right), DrawShadow;
+                    DrawNumber 10, "fonts/goodolhud_font.bmf", Green, Coin, Alignment(Left), DrawShadow, -207, -57, 2;
+                }
+            } else IsSelected StrifeGrenadeLauncher, StrifeGrenadeLauncher2 {
+                IfCVarInt goh_showweaponname, 1, equal
+                {
+                    DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_MONEY", -207, -73, 2, Alignment(Right), DrawShadow;
+                    DrawNumber 10, "fonts/goodolhud_font.bmf", Green, Coin, Alignment(Left), DrawShadow, -207, -73, 2;
+                } else {
+                    DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_MONEY", -207, -57, 2, Alignment(Right), DrawShadow;
+                    DrawNumber 10, "fonts/goodolhud_font.bmf", Green, Coin, Alignment(Left), DrawShadow, -207, -57, 2;
+                }
+            } else UsesSecondaryAmmo {
                 IfCVarInt goh_showweaponname, 1, equal
                 {
                     DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_MONEY", -207, -73, 2, Alignment(Right), DrawShadow;
@@ -670,8 +851,62 @@ StatusBar Fullscreen, FullscreenOffsets
     // Ammo capacities
     IfCVarInt goh_showammocapacities, 1, equal
     {
-        UsesSecondaryAmmo
+        IsSelected StrifeCrossbow, StrifeCrossbow2
         {
+            IfCVarInt goh_showweaponname, 1, equal
+            {
+                DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMOCAPACITY_MANA1", -199, -89, 2, Alignment(Right), DrawShadow;
+                DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_SEPARATOR", -151, -89, 2, Alignment(Right), DrawShadow;
+
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo Mana1, Alignment(Right), DrawShadow, -159, -89, 2;
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, AmmoCapacity Mana1, Alignment(Left), DrawShadow, -151, -89, 2;
+
+                DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_AMMOCAPACITY_MANA2", -199, -73, 2, Alignment(Right), DrawShadow;
+                DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_SEPARATOR", -151, -73, 2, Alignment(Right), DrawShadow;
+
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Ammo Mana2, Alignment(Right), DrawShadow, -159, -73, 2;
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Green, AmmoCapacity Mana2, Alignment(Left), DrawShadow, -151, -73, 2;
+            } else {
+                DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMOCAPACITY_MANA1", -199, -73, 2, Alignment(Right), DrawShadow;
+                DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_SEPARATOR", -151, -73, 2, Alignment(Right), DrawShadow;
+
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo Mana1, Alignment(Right), DrawShadow, -159, -73, 2;
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, AmmoCapacity Mana1, Alignment(Left), DrawShadow, -151, -73, 2;
+
+                DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_AMMOCAPACITY_MANA2", -199, -57, 2, Alignment(Right), DrawShadow;
+                DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_SEPARATOR", -151, -57, 2, Alignment(Right), DrawShadow;
+
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Ammo Mana2, Alignment(Right), DrawShadow, -159, -57, 2;
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Green, AmmoCapacity Mana2, Alignment(Left), DrawShadow, -151, -57, 2;
+            }
+        } else IsSelected StrifeGrenadeLauncher, StrifeGrenadeLauncher2 {
+            IfCVarInt goh_showweaponname, 1, equal
+            {
+                DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMOCAPACITY_MANA1", -199, -89, 2, Alignment(Right), DrawShadow;
+                DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_SEPARATOR", -151, -89, 2, Alignment(Right), DrawShadow;
+
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo Mana1, Alignment(Right), DrawShadow, -159, -89, 2;
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, AmmoCapacity Mana1, Alignment(Left), DrawShadow, -151, -89, 2;
+
+                DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_AMMOCAPACITY_MANA2", -199, -73, 2, Alignment(Right), DrawShadow;
+                DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_SEPARATOR", -151, -73, 2, Alignment(Right), DrawShadow;
+
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Ammo Mana2, Alignment(Right), DrawShadow, -159, -73, 2;
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Green, AmmoCapacity Mana2, Alignment(Left), DrawShadow, -151, -73, 2;
+            } else {
+                DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMOCAPACITY_MANA1", -199, -73, 2, Alignment(Right), DrawShadow;
+                DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_SEPARATOR", -151, -73, 2, Alignment(Right), DrawShadow;
+
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, Ammo Mana1, Alignment(Right), DrawShadow, -159, -73, 2;
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Blue, AmmoCapacity Mana1, Alignment(Left), DrawShadow, -151, -73, 2;
+
+                DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_AMMOCAPACITY_MANA2", -199, -57, 2, Alignment(Right), DrawShadow;
+                DrawString "fonts/goodolhud_font.bmf", Green, "$GOODOLHUD_SEPARATOR", -151, -57, 2, Alignment(Right), DrawShadow;
+
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Green, Ammo Mana2, Alignment(Right), DrawShadow, -159, -57, 2;
+                DrawNumber 4, "fonts/goodolhud_font.bmf", Green, AmmoCapacity Mana2, Alignment(Left), DrawShadow, -151, -57, 2;
+            }
+        } else UsesSecondaryAmmo {
             IfCVarInt goh_showweaponname, 1, equal
             {
                 DrawString "fonts/goodolhud_font.bmf", Blue, "$GOODOLHUD_AMMOCAPACITY_MANA1", -199, -89, 2, Alignment(Right), DrawShadow;
@@ -756,7 +991,16 @@ StatusBar Fullscreen, FullscreenOffsets
     }
 
     // Weapon tag
-    IfCVarInt goh_showweaponname, 1, equal { DrawString "fonts/goodolhud_font.bmf", Untranslated, WeaponTag, -6, -25, 2, Alignment(Right), DrawShadow; }
+    IfCVarInt goh_showweaponname, 1, equal
+    {
+        IsSelected StrifeCrossbow { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_WEAPON_STRIFECROSSBOW", -6, -25, 2, Alignment(Right), DrawShadow; }
+        else IsSelected StrifeCrossbow2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_WEAPON_STRIFECROSSBOW2", -6, -25, 2, Alignment(Right), DrawShadow; }
+        else IsSelected StrifeGrenadeLauncher { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_WEAPON_STRIFEGRENADELAUNCHER", -6, -25, 2, Alignment(Right), DrawShadow; }
+        else IsSelected StrifeGrenadeLauncher2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_WEAPON_STRIFEGRENADELAUNCHER2", -6, -25, 2, Alignment(Right), DrawShadow; }
+        else IsSelected Mauler { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_WEAPON_MAULER", -6, -25, 2, Alignment(Right), DrawShadow; }
+        else IsSelected Mauler2 { DrawString "fonts/goodolhud_font.bmf", Untranslated, "$GOODOLHUD_WEAPON_MAULER2", -6, -25, 2, Alignment(Right), DrawShadow; }
+        else { DrawString "fonts/goodolhud_font.bmf", Untranslated, WeaponTag, -6, -25, 2, Alignment(Right), DrawShadow; }
+    }
 
     // Selected inventory
     IfCVarInt goh_alwaysshowinventorycounter, 1, equal
