@@ -622,7 +622,7 @@ class GoodOlHUDStatusBar : StrifeStatusBar
             "PowerMask",         "green",  "[Green]",
             "PowerScanner",      "black",  "[Black]",
             "PowerShadow",       "gray",   "[Gray]",
-            "PowerTargeter"      "yellow", "[Yellow]"
+            "PowerTargeter",     "yellow", "[Yellow]"
         };
 
         int checkedpowerups = 0, activepowerups = 0;
