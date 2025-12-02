@@ -157,7 +157,7 @@ class GoodOlHUDStatusBar : DoomStatusBar
 
         //if (isInventoryBarVisible()) { DrawInventoryBar(diparms, (155, 200), 7); }
 
-		// Not ideal. The bar graphic overlaps itself if you get more than two items.
+        // Not ideal. The bar graphic overlaps itself if you get more than two items.
         let hasscanner = Powerup(CPlayer.mo.FindInventory("PowerScanner"));
         let hasenvirosuit = Powerup(CPlayer.mo.FindInventory("PowerEnviroSuit"));
         let hasnodrown = Powerup(CPlayer.mo.FindInventory("PowerNoDrown"));
@@ -916,7 +916,7 @@ class GoodOlHUDStatusBar : DoomStatusBar
             "PowerNoDrown",      "sapphire", "[Sapphire]",
             "Power2xDamage",     "red",      "[Red]",
             "PowerEnergyDrink",  "orange",   "[Orange]",
-            "PowerScanner"       "purple",   "[Purple]"
+            "PowerScanner",      "purple",   "[Purple]"
         };
 
         int checkedpowerups = 0, activepowerups = 0;
