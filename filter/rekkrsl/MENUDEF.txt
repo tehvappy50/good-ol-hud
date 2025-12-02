@@ -1,0 +1,16 @@
+ListMenu "RekkrOptionsMenu" 
+{
+    StaticPatch 94, 2, "M_DOOM"
+    Font "BIGFONT"
+    Position 120, 64
+    Selector "M_SKULL1", -24, -2
+    LineSpacing 17
+    TextItem "video",    "v", "RekkrVideoMenu"
+    TextItem "audio",    "s", "RekkrSoundOptions"
+    TextItem "controls", "c", "RekkrControlsMenu"
+    TextItem "player",   "p", "NewPlayerMenu"
+    TextItem "gameplay", "m", "rGameplayOptions"
+    TextItem "other",    "o", "OptionsMenu" // added so you can access the menu
+    Font "SMALLFONT"
+    Position 120, 144
+}

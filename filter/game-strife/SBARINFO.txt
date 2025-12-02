@@ -1,9 +1,0 @@
-Base None;
-Height 0;
-MonospaceFonts true, "0";
-InterpolateHealth false;
-InterpolateArmor false;
-LowerHealthCap false;
-
-#include "SBARINFO.fullscreen"
-#include "SBARINFO.inventoryfullscreen"

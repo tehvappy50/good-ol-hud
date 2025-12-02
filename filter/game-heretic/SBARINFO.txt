@@ -1,7 +1,0 @@
-Base Heretic;
-InterpolateHealth false;
-InterpolateArmor false;
-LowerHealthCap false;
-
-#include "SBARINFO.fullscreen"
-#include "SBARINFO.inventoryfullscreen"

@@ -1,4 +1,0 @@
-user bool goh_showmugshot = false;
-user bool goh_showcoincounter = true;
-user bool goh_showstamina = true;
-user bool goh_showaccuracy = true;

@@ -1,0 +1,6 @@
+// Bottom Left
+nosave bool goh_showstamina = true;
+nosave bool goh_showaccuracy = true;
+
+// Bottom Right
+nosave bool goh_showcoincounter = true;

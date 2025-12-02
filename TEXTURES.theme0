@@ -1,0 +1,900 @@
+// Bar bases
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_default.png", 146, 16 { Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 }
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_doom.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 87, 87, 87, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_freedoom.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 55, 55, 55, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_raven.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 59, 60, 59, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_strife.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 97, 47, 35, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_blasphemer.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 70, 48, 32, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_chex.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 0, 0, 227, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_harmony.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 15, 100, 140, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_hacx.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 79, 79, 79, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_square.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 117, 0, 112, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_woolball.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 34, 53, 96, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_psxdoom.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 74, 74, 74, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_psxfinaldoom.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 24, 24, 24, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_rekkr.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 103, 107, 79, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_wolf3d.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 0, 0, 164, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_duke3d.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 180, 83, 4, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_duke64.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 181, 173, 173, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_marathon1.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 239, 239, 222, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_marathon2.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 74, 66, 66, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_base_quake1.png", 146, 16
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar_base.png", 0, 0 { Blend 99, 63, 43, 0.5 }
+}
+
+// Bars
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_blank.png", 144, 14 { Patch "TNT1A0", 0, 0 }
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_black.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 0, 0, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_blue.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 0, 0, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_brick.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 201, 130, 130, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_brown.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 128, 96, 64, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_cream.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 255, 192, 160, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_cyan.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 0, 128, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_darkbrown.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 128, 64, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_darkgray.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 112, 112, 112, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_darkgreen.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 0, 64, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_darkred.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 64, 0, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_deeppink.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 255, 0, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_fire.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 255, 176, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_gold.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 255, 223, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_gray.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 128, 128, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_green.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 0, 128, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_ice.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 177, 177, 190, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_lightblue.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 0, 64, 160, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_lightcyan.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 0, 178, 158, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_olive.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 96, 112, 64, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_orange.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 228, 128, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_periwinkle.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 127, 127, 213, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_pink.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 228, 96, 228, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_purple.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 128, 0, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_red.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 128, 0, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_sapphire.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 80, 176, 252, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_silver.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 182, 182, 211, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_tan.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 192, 160, 160, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_teal.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 82, 144, 158, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_white.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 255, 255, 255, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_yellow.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 128, 128, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_healthovermax1.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 188, 0, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_healthovermax2.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 248, 0, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_armorovermax1.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 0, 188, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_armorovermax2.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 0, 248, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_energyovermax1.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 0, 82, 206, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_energyovermax2.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 0, 100, 252, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_hazardovermax1.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 0, 124, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/bars/goodolhud_bar_hazardovermax2.png", 144, 14
+{
+    Patch "graphics/hud/theme0/bars/goodolhud_bar.png", 0, 0 { Blend 0, 184, 0, 1 }
+}
+
+// Armor icons
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorblack.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 0, 0, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorblue.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 0, 0, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorbrick.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 201, 130, 130, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorbrown.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 128, 96, 64, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorcream.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 255, 192, 160, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorcyan.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 0, 128, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armordarkbrown.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 128, 64, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armordarkgray.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 112, 112, 112, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armordarkgreen.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 0, 64, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armordarkred.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 64, 0, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armordeeppink.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 255, 0, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorfire.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 255, 176, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorgold.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 255, 223, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorgray.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 128, 128, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorgreen.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 0, 128, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorice.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 177, 177, 190, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorlightblue.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 0, 64, 160, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorlightcyan.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 0, 178, 158, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorolive.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 96, 112, 64, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armororange.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 228, 128, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorperiwinkle.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 127, 127, 213, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorpink.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 228, 96, 228, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorpurple.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 128, 0, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorred.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 128, 0, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorsapphire.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 80, 176, 252, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorsilver.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 182, 182, 211, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armortan.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 192, 160, 160, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorteal.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 82, 144, 158, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armorwhite.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 255, 255, 255, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_armoryellow.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 128, 128, 0, 1 }
+}
+
+// Berserk icon
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_berserk.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_health.png", 0, 0 { Blend 128, 0, 0, 1 }
+}
+
+// Inventory box
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_default.png", 40, 34 { Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 }
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_doom.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 87, 87, 87, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_freedoom.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 55, 55, 55, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_raven.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 59, 60, 59, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_strife.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 97, 47, 35, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_blasphemer.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 70, 48, 32, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_chex.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 0, 0, 227, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_harmony.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 15, 100, 140, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_hacx.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 79, 79, 79, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_square.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 117, 0, 112, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_woolball.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 34, 53, 96, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_psxdoom.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 74, 74, 74, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_psxfinaldoom.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 24, 24, 24, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_rekkr.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 103, 107, 79, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_wolf3d.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 0, 0, 164, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_duke3d.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 180, 83, 4, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_duke64.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 181, 173, 173, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_marathon1.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 239, 239, 222, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_marathon2.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 74, 66, 66, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_inventory_quake1.png", 40, 34
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_inventory.png", 0, 0 { Blend 99, 63, 43, 0.5 }
+}
+
+// Mugshot box
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_default.png", 39, 35 { Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 }
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_doom.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 87, 87, 87, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_freedoom.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 55, 55, 55, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_raven.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 59, 60, 59, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_strife.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 97, 47, 35, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_blasphemer.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 70, 48, 32, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_chex.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 0, 0, 227, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_harmony.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 15, 100, 140, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_hacx.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 79, 79, 79, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_square.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 117, 0, 112, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_woolball.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 34, 53, 96, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_psxdoom.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 74, 74, 74, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_psxfinaldoom.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 24, 24, 24, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_rekkr.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 103, 107, 79, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_wolf3d.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 0, 0, 164, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_duke3d.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 180, 83, 4, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_duke64.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 181, 173, 173, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_marathon1.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 239, 239, 222, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_marathon2.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 74, 66, 66, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_mugshot_quake1.png", 39, 35
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_mugshot.png", 0, 0 { Blend 99, 63, 43, 0.5 }
+}
+
+// Timer bases
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_default.png", 13, 13 { Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 }
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_doom.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 87, 87, 87, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_freedoom.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 55, 55, 55, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_raven.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 59, 60, 59, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_strife.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 97, 47, 35, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_blasphemer.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 70, 48, 32, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_chex.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 0, 0, 227, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_harmony.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 15, 100, 140, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_hacx.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 79, 79, 79, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_square.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 117, 0, 112, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_woolball.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 34, 53, 96, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_psxdoom.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 74, 74, 74, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_psxfinaldoom.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 24, 24, 24, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_rekkr.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 103, 107, 79, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_wolf3d.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 0, 0, 164, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_duke3d.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 180, 83, 4, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_duke64.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 181, 173, 173, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_marathon1.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 239, 239, 222, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_marathon2.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 74, 66, 66, 0.5 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_base_quake1.png", 13, 13
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer_base.png", 0, 0 { Blend 99, 63, 43, 0.5 }
+}
+
+// Timers
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_black.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 0, 0, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_blue.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 0, 0, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_brick.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 201, 130, 130, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_brown.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 128, 96, 64, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_cream.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 255, 192, 160, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_cyan.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 0, 128, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_darkbrown.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 128, 64, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_darkgray.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 112, 112, 112, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_darkgreen.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 0, 64, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_darkred.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 64, 0, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_deeppink.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 255, 0, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_fire.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 255, 176, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_gold.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 255, 223, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_gray.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 128, 128, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_green.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 0, 128, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_ice.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 177, 177, 190, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_lightblue.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 0, 64, 160, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_lightcyan.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 0, 178, 158, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_olive.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 96, 112, 64, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_orange.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 228, 128, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_periwinkle.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 127, 127, 213, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_pink.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 228, 96, 228, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_purple.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 128, 0, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_red.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 128, 0, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_sapphire.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 80, 176, 252, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_silver.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 182, 182, 211, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_tan.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 192, 160, 160, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_teal.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 82, 144, 158, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_white.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 255, 255, 255, 1 }
+}
+
+Graphic "graphics/hud/theme0/timers/goodolhud_timer_yellow.png", 9, 9
+{
+    Patch "graphics/hud/theme0/timers/goodolhud_timer.png", 0, 0 { Blend 128, 128, 0, 1 }
+}

@@ -1,0 +1,48 @@
+// General
+nosave handlerclass(GoodOlHUDThemeSettingClamper) int goh_theme = 0;
+nosave handlerclass(GoodOlHUDColorSchemeSettingClamper) int goh_colorscheme = 0;
+nosave bool goh_bargradients = false;
+nosave bool goh_alwaysshowinventorycounter = false;
+
+// Bottom Left
+nosave bool goh_showteamname = true;
+nosave bool goh_showplayername = true;
+nosave bool goh_playernameteamcolor = true;
+nosave bool goh_showmugshot = true;
+// goh_showstamina defined via lump filtering
+// goh_showaccuracy defined via lump filtering
+nosave bool goh_showarmortype = true;
+nosave bool goh_showarmorsavepercent = true;
+nosave bool goh_showarmorclass = false;
+nosave bool goh_colorhealthoninvuln = true;
+nosave bool goh_showberserk = true;
+nosave bool goh_lowerhealthcap = false;
+nosave bool goh_swaphealtharmor = false;
+nosave bool goh_showxptonextlevel = false;
+nosave bool goh_showpoweruptimers = true;
+nosave bool goh_showstatustimers = true;
+nosave bool goh_showhazardcount = true;
+
+// Bottom Center
+// Nothing here.
+
+// Bottom Right
+nosave bool goh_showweaponname = true;
+nosave bool goh_reloadableammolabel = false;
+nosave bool goh_showammocapacities = true;
+// goh_showcoincounter defined via lump filtering
+nosave bool goh_showweaponbar = true;
+
+// Top Left
+// Nothing here.
+
+// Top Center
+nosave bool goh_showairtimer = true;
+
+// Top Right
+nosave handlerclass(GoodOlHUDShowTimerSettingClamper) int goh_showtimer = 2;
+nosave bool goh_colortimerunderpar = true;
+nosave bool goh_showtimertotal = true;
+nosave bool goh_showmonstercounter = true;
+nosave bool goh_showsecretcounter = true;
+nosave bool goh_showitemcounter = true;
