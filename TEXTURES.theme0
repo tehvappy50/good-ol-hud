@@ -443,11 +443,31 @@ Graphic "graphics/hud/theme0/icons/goodolhud_icon_armoryellow.png", 12, 12
     Patch "graphics/hud/theme0/icons/goodolhud_icon_armor.png", 0, 0 { Blend 128, 128, 0, 1 }
 }
 
-// Berserk icon
+// Berserk icons
 
-Graphic "graphics/hud/theme0/icons/goodolhud_icon_berserk.png", 12, 12
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_berserk_crossred.png", 12, 12
 {
-    Patch "graphics/hud/theme0/icons/goodolhud_icon_health.png", 0, 0 { Blend 128, 0, 0, 1 }
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_health_cross.png", 0, 0 { Blend 128, 0, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_berserk_crossgreen.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_health_cross.png", 0, 0 { Blend 0, 128, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_berserk_crossblue.png", 12, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_health_cross.png", 0, 0 { Blend 0, 0, 128, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_berserk_pillleftred.png", 6, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_health_pillleft.png", 0, 0 { Blend 128, 0, 0, 1 }
+}
+
+Graphic "graphics/hud/theme0/icons/goodolhud_icon_berserk_pillrightwhite.png", 6, 12
+{
+    Patch "graphics/hud/theme0/icons/goodolhud_icon_health_pillright.png", 0, 0 { Blend 255, 255, 255, 1 }
 }
 
 // Inventory box
