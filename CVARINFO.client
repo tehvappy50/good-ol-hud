@@ -27,6 +27,7 @@ nosave bool goh_showhazardcount = true;
 // Nothing here.
 
 // Bottom Right
+nosave bool goh_showpendingweapon = false;
 nosave bool goh_showweaponname = true;
 nosave bool goh_reloadableammolabel = false;
 nosave bool goh_showammocapacities = true;
