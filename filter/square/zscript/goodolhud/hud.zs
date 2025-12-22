@@ -913,11 +913,9 @@ class GoodOlHUDStatusBar : DoomStatusBar
 
     protected virtual void GOHDrawMugShot(int coordbasex, int coordbasey)
     {
-        let canshowpendingweapon = CVar.FindCVar("goh_showpendingweapon").GetBool() && CPlayer.PendingWeapon != WP_NOCHANGE;
-
         DrawImage("graphics/hud/" .. theme .. "/icons/goodolhud_icon_mugshot_" .. colorschemebase .. ".png", (coordbasex, coordbasey), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
 
-        if ((canshowpendingweapon && CPlayer.PendingWeapon.GetClassName() == "SauceWeapon") || (CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "SauceWeapon")) { DrawImage("graphics/hud/goodolhud_PF_YIKES.png", (coordbasex + 19.6, coordbasey + 17.5), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_CENTER, 1, (35, 31)); }
+        if (CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "SauceWeapon") { DrawImage("graphics/hud/goodolhud_PF_YIKES.png", (coordbasex + 19.6, coordbasey + 17.5), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_CENTER, 1, (35, 31)); }
         else { DrawTexture(GetMugShot(5), (coordbasex + 19.6, coordbasey + 17.5), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_CENTER, 1, (35, 31)); }
 
         // powerup graphics stuff currently moved to powerup timers
@@ -1399,7 +1397,7 @@ class GoodOlHUDStatusBar : DoomStatusBar
                 if (goonades) { ammotype1 = goonades; }
                 else { ammo1goonadeshack = true; }
 
-                if (goonadethrowcheckamount > 0)
+                if (goonadethrowcheckamount > 0 && !canshowpendingweapon)
                 {
                     ammotype2 = goonadethrowcheck;
                     showammo2perc = true;
@@ -1416,7 +1414,7 @@ class GoodOlHUDStatusBar : DoomStatusBar
                 if (goonades) { ammotype2 = goonades; }
                 else { ammo2goonadeshack = true; }
 
-                if (goonadethrowcheckamount > 0)
+                if (goonadethrowcheckamount > 0 && !canshowpendingweapon)
                 {
                     ammotype3 = goonadethrowcheck;
                     showammo3perc = true;
@@ -1432,7 +1430,7 @@ class GoodOlHUDStatusBar : DoomStatusBar
                 if (goonades) { ammotype3 = goonades; }
                 else { ammo3goonadeshack = true; }
 
-                if (goonadethrowcheckamount > 0)
+                if (goonadethrowcheckamount > 0 && !canshowpendingweapon)
                 {
                     ammotype4 = goonadethrowcheck;
                     showammo4perc = true;
