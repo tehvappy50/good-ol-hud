@@ -1,4 +1,4 @@
-class GoodOlHUDStatusBar : DoomStatusBar
+class GoodOlHUDStatusBar : GoodOlHUDHacxStatusBar
 {
     HUDFont GOHmHUDFont;
     InventoryBarState GOHdiparms0, GOHdiparms1;
@@ -46,14 +46,7 @@ class GoodOlHUDStatusBar : DoomStatusBar
 
         Font fnt;
 
-        // Create the fonts used for the status bar HUD
-        fnt = "INDEXFONT";
-
-        mIndexFont = HUDFont.Create(fnt, fnt.GetCharWidth("0"), Mono_CellLeft);
-
-        diparms = InventoryBarState.Create(mIndexFont, Font.CR_GOLD, 1, "ARTIBOX", "SELECTBO", (0, 0), "INVGEML1", "INVGEMR1", (4, -9));
-
-        // Create the fonts used for the fullscreen HUD
+        // Create the font used for the fullscreen HUD
         fnt = "fonts/goodolhud_font.bmf";
 
         GOHmHUDFont = HUDFont.Create(fnt, fnt.GetCharWidth("0") + 2, Mono_CellCenter, 2, 2);
@@ -71,122 +64,16 @@ class GoodOlHUDStatusBar : DoomStatusBar
             BeginStatusBar();
             DrawMainBar (TicFrac);
         } else {
+            let hudenabled = CVar.FindCVar("goh_enabled").GetBool();
+
             if (state == HUD_Fullscreen)
             {
                 BeginHUD();
-                GOHDrawFullScreenStuff ();
+
+                if (hudenabled) { GOHDrawFullScreenStuff (); }
+                else { DrawFullScreenStuff (); }
             }
         }
-    }
-
-    // SBARINFO conversion (including inventory)
-    protected void DrawMainBar (double TicFrac)
-    {
-        DrawImage("STBAR", (0, 168), DI_ITEM_OFFSETS);
-        DrawImage("STTPRCNT", (90, 171), DI_ITEM_OFFSETS);
-        DrawImage("STTPRCNT", (221, 171), DI_ITEM_OFFSETS);
-
-        Inventory a1 = GetCurrentAmmo();
-
-        if (a1) { DrawString(mHUDFont, FormatNumber(a1.Amount, 3, 3), (44, 171), DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW); }
-
-        DrawString(mHUDFont, FormatNumber(CPlayer.Health, 3, 3), (90, 171), DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW);
-        DrawString(mHUDFont, FormatNumber(GetArmorAmount(), 3, 3), (221, 171), DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW);
-
-        DrawBarKeys();
-        DrawBarAmmo();
-
-        if (deathmatch || teamplay) { DrawString(mHUDFont, FormatNumber(CPlayer.FragCount, 3, 2 + (CPlayer.FragCount < 0)), (138, 171), DI_TEXT_ALIGN_RIGHT); }
-        else { DrawBarWeapons(); }
-
-        if (multiplayer) { DrawImage("STFBANY", (143, 169), DI_TRANSLATABLE|DI_ITEM_OFFSETS); }
-
-        if (CPlayer.mo.InvSel && !Level.NoInventoryBar)
-        {
-            DrawInventoryIcon(CPlayer.mo.InvSel, (143, 168), DI_DIMDEPLETED|DI_ITEM_OFFSETS);
-
-            if (CPlayer.mo.InvSel.Amount > 1) { DrawString(mAmountFont, FormatNumber(CPlayer.mo.InvSel.Amount), (172, 198 - mIndexFont.mFont.GetHeight()), DI_TEXT_ALIGN_RIGHT, Font.CR_GOLD); }
-        }
-        else { DrawTexture(GetMugShot(5), (143, 168), DI_ITEM_OFFSETS); }
-
-        if (isInventoryBarVisible()) { DrawInventoryBar(diparms, (155, 200), 7); }
-    }
-
-    override void DrawBarAmmo()
-    {
-        int amt1, maxamt;
-
-        [amt1, maxamt] = GetAmount("HacxRounds");
-        DrawString(mIndexFont, FormatNumber(amt1, 3, 3), (288, 173), DI_TEXT_ALIGN_RIGHT, Font.CR_GOLD);
-        DrawString(mIndexFont, FormatNumber(maxamt, 3, 3), (314, 173), DI_TEXT_ALIGN_RIGHT, Font.CR_GOLD);
-
-        [amt1, maxamt] = GetAmount("HacxCartridges");
-        DrawString(mIndexFont, FormatNumber(amt1, 3, 3), (288, 179), DI_TEXT_ALIGN_RIGHT, Font.CR_GOLD);
-        DrawString(mIndexFont, FormatNumber(maxamt, 3, 3), (314, 179), DI_TEXT_ALIGN_RIGHT, Font.CR_GOLD);
-
-        [amt1, maxamt] = GetAmount("HacxTorpedo");
-        DrawString(mIndexFont, FormatNumber(amt1, 3, 3), (288, 185), DI_TEXT_ALIGN_RIGHT, Font.CR_GOLD);
-        DrawString(mIndexFont, FormatNumber(maxamt, 3, 3), (314, 185), DI_TEXT_ALIGN_RIGHT, Font.CR_GOLD);
-
-        [amt1, maxamt] = GetAmount("HacxMolecules");
-        DrawString(mIndexFont, FormatNumber(amt1, 3, 3), (288, 191), DI_TEXT_ALIGN_RIGHT, Font.CR_GOLD);
-        DrawString(mIndexFont, FormatNumber(maxamt, 3, 3), (314, 191), DI_TEXT_ALIGN_RIGHT, Font.CR_GOLD);
-    }
-
-    void DrawInventoryBar(InventoryBarState parms, Vector2 position, int numfields, int flags = 0, double bgalpha = 1.)
-    {
-        double width = parms.boxsize.X * numfields;
-        [position, flags] = AdjustPosition(position, flags, width, parms.boxsize.Y);
-
-        CPlayer.mo.InvFirst = ValidateInvFirst(numfields);
-
-        if (!CPlayer.mo.InvFirst) { return; } // Player has no listed inventory items.
-
-        Vector2 boxsize = parms.boxsize;
-        int boxseparator = 1;
-
-        // First draw all the boxes
-        for (int i = 0; i < numfields; i++) { DrawTexture(parms.box, position + ((boxsize.X + boxseparator) * i, 0), flags|DI_ITEM_LEFT_TOP, bgalpha); }
-
-        // now the items and the rest
-        Vector2 itempos = position + boxsize / 2;
-        itempos += (-15, -15);
-
-        Vector2 textpos = position + boxsize - (1, 1 + parms.amountfont.mFont.GetHeight());
-        textpos += (-3, -1);
-
-        int i = 0;
-
-        Inventory item;
-
-        for (item = CPlayer.mo.InvFirst; item && i < numfields; item = item.NextInv())
-        {
-            for (int j = 0; j < 2; j++)
-            {
-                if (j ^ !!(flags & DI_DRAWCURSORFIRST))
-                {
-                    if (item == CPlayer.mo.InvSel)
-                    {
-                        double flashAlpha = bgalpha;
-
-                        if (flags & DI_ARTIFLASH) { flashAlpha *= itemflashFade; }
-
-                        DrawTexture(parms.selector, position + parms.selectofs + ((boxsize.X + boxseparator) * i, 0), flags|DI_ITEM_LEFT_TOP, flashAlpha);
-                    }
-                }
-                else { DrawInventoryIcon(item, itempos + ((boxsize.X + boxseparator) * i, 0), flags|DI_DIMDEPLETED|DI_ITEM_OFFSETS); }
-            }
-
-            if (parms.amountfont && (item.Amount > 1 || (flags & DI_ALWAYSSHOWCOUNTERS))) { DrawString(parms.amountfont, FormatNumber(item.Amount, 0, 10), textpos + ((boxsize.X + boxseparator) * i, 0), flags|DI_TEXT_ALIGN_RIGHT, parms.cr, parms.itemalpha); }
-
-            i++;
-        }
-
-        // Is there something to the left?
-        if (CPlayer.mo.FirstInv() != CPlayer.mo.InvFirst) { DrawTexture(parms.left, position + (-parms.arrowoffset.X, parms.arrowoffset.Y), flags|DI_ITEM_RIGHT|DI_ITEM_VCENTER); }
-
-        // Is there something to the right?
-        if (item) { DrawTexture(parms.right, position + (parms.arrowoffset.X + 5, parms.arrowoffset.Y) + (width, 0), flags|DI_ITEM_LEFT|DI_ITEM_VCENTER); }
     }
 
     int bottomleftvertelements;
@@ -907,7 +794,7 @@ class GoodOlHUDStatusBar : DoomStatusBar
     {
         // The AltHUD specific adjustments have been removed here, because the AltHUD uses its own variant of this function
         // that can obey AltHUD rules - which this cannot.
-        let fullscreenhudactive = screenblocks == 11 && !(automapactive && !viewactive);
+        let fullscreenhudactive = CVar.FindCVar("goh_enabled").GetBool() && screenblocks == 11 && !(automapactive && !viewactive);
 
         Vector2 pos = fullscreenhudactive ? (20 + powerupnudge.X, -6 + powerupnudge.Y) : (-20, POWERUPICONSIZE * 5 / 4);
         double maxpos = screen.GetWidth() / 2;

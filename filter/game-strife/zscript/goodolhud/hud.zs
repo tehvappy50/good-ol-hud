@@ -46,7 +46,7 @@ class GoodOlHUDStatusBar : StrifeStatusBar
 
         Font fnt;
 
-        // Create the fonts used for the fullscreen HUD
+        // Create the font used for the fullscreen HUD
         fnt = "fonts/goodolhud_font.bmf";
 
         GOHmHUDFont = HUDFont.Create(fnt, fnt.GetCharWidth("0") + 2, Mono_CellCenter, 2, 2);
@@ -64,16 +64,20 @@ class GoodOlHUDStatusBar : StrifeStatusBar
             BeginStatusBar();
             DrawMainBar (TicFrac);
         } else {
+            let hudenabled = CVar.FindCVar("goh_enabled").GetBool();
+
             if (state == HUD_Fullscreen)
             {
                 BeginHUD();
-                GOHDrawFullScreenStuff ();
+
+                if (hudenabled) { GOHDrawFullScreenStuff (); }
+                else { DrawFullScreenStuff (); }
             }
 
             // Draw pop screen (log, keys, and status)
             if (CurrentPop != POP_None && PopHeight < 0)
             {
-                if (state == HUD_Fullscreen) { GOHDrawPopScreen (screen.GetHeight(), TicFrac); }
+                if (hudenabled && state == HUD_Fullscreen) { GOHDrawPopScreen (screen.GetHeight(), TicFrac); }
                 else { DrawPopScreen (screen.GetHeight(), TicFrac); }
             }
         }
@@ -815,7 +819,7 @@ class GoodOlHUDStatusBar : StrifeStatusBar
     {
         // The AltHUD specific adjustments have been removed here, because the AltHUD uses its own variant of this function
         // that can obey AltHUD rules - which this cannot.
-        let fullscreenhudactive = screenblocks == 11 && !(automapactive && !viewactive);
+        let fullscreenhudactive = CVar.FindCVar("goh_enabled").GetBool() && screenblocks == 11 && !(automapactive && !viewactive);
 
         Vector2 pos = fullscreenhudactive ? (20 + powerupnudge.X, -6 + powerupnudge.Y) : (-20, POWERUPICONSIZE * 5 / 4);
         double maxpos = screen.GetWidth() / 2;
@@ -1310,7 +1314,7 @@ class GoodOlHUDStatusBar : StrifeStatusBar
         }
     }
 
-    override bool MustDrawLog(int state) { return state == HUD_Fullscreen ? true : (generic_ui || log_vgafont); } // placeholder
+    override bool MustDrawLog(int state) { return CVar.FindCVar("goh_enabled").GetBool() && state == HUD_Fullscreen ? true : (generic_ui || log_vgafont); } // placeholder
 
     protected void GOHDrawPopScreen (int bottom, double TicFrac) {} // show nothing for the time being; no work done on it
 }

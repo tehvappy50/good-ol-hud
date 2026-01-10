@@ -46,7 +46,7 @@ class GoodOlHUDStatusBar : WadFusionStatusBar
 
         Font fnt;
 
-        // Create the fonts used for the fullscreen HUD
+        // Create the font used for the fullscreen HUD
         fnt = "fonts/goodolhud_font.bmf";
 
         GOHmHUDFont = HUDFont.Create(fnt, fnt.GetCharWidth("0") + 2, Mono_CellCenter, 2, 2);
@@ -64,10 +64,14 @@ class GoodOlHUDStatusBar : WadFusionStatusBar
             BeginStatusBar();
             DrawMainBar (TicFrac);
         } else {
+            let hudenabled = CVar.FindCVar("goh_enabled").GetBool();
+
             if (state == HUD_Fullscreen)
             {
                 BeginHUD();
-                GOHDrawFullScreenStuff ();
+
+                if (hudenabled) { GOHDrawFullScreenStuff (); }
+                else { DrawFullScreenStuff (); }
             }
         }
     }
@@ -791,7 +795,7 @@ class GoodOlHUDStatusBar : WadFusionStatusBar
     {
         // The AltHUD specific adjustments have been removed here, because the AltHUD uses its own variant of this function
         // that can obey AltHUD rules - which this cannot.
-        let fullscreenhudactive = screenblocks == 11 && !(automapactive && !viewactive);
+        let fullscreenhudactive = CVar.FindCVar("goh_enabled").GetBool() && screenblocks == 11 && !(automapactive && !viewactive);
 
         Vector2 pos = fullscreenhudactive ? (20 + powerupnudge.X, -6 + powerupnudge.Y) : (-20, POWERUPICONSIZE * 5 / 4);
         double maxpos = screen.GetWidth() / 2;
