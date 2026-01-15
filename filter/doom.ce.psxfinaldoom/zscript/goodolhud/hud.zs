@@ -424,33 +424,36 @@ class GoodOlHUDStatusBar : PsxStatusBar
 
         coordnudge.Y -= 16 * weaponnameamount;
 
+        // Maximum amounts nudger
+        if (canshowmaxamounts) { coordnudge.X -= 24; }
+
         // Ammo
         foundammotypes = 0;
 
-        GOHDrawAmmo(-155 + coordnudge.X, -4 + coordnudge.Y);
+        GOHDrawAmmo(-131 + coordnudge.X, -4 + coordnudge.Y);
 
         coordnudge.Y -= 16 * foundammotypes;
 
         // Ammo capacities
         foundammocapacities = 0;
 
-        if (CVar.FindCVar("goh_showammocapacities").GetBool()) { GOHDrawAmmoCapacities(-234 + coordnudge.X, -17 + coordnudge.Y); }
+        if (CVar.FindCVar("goh_showammocapacities").GetBool()) { GOHDrawAmmoCapacities(-210 + coordnudge.X, -17 + coordnudge.Y); }
 
         coordnudge.Y -= 16 * foundammocapacities;
 
         // Currencies
         if (CVar.FindCVar("goh_showcoincounter").GetBool())
         {
-            coordbase = (-250 + coordnudge.X, -17 + coordnudge.Y);
+            coordbase = (-226 + coordnudge.X, -17 + coordnudge.Y);
 
             DrawString(GOHmHUDFont, StringTable.Localize("$GOODOLHUD_MONEY") .. FormatNumber(GetAmount("Coin"), 1, 10), coordbase, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_LEFT, Font.CR_GREEN);
         }
 
         // reset nudging at this point
-        coordnudge = (0, 0 - (16 * weaponnameamount));
+        coordnudge = (0 - (24 * canshowmaxamounts), 0 - (16 * weaponnameamount));
 
         // Selected inventory
-        coordbase = (-274 + coordnudge.X, -4 + coordnudge.Y);
+        coordbase = (-250 + coordnudge.X, -4 + coordnudge.Y);
 
         if (!isInventoryBarVisible() && !Level.NoInventoryBar && CPlayer.mo.InvSel)
         {
@@ -462,7 +465,7 @@ class GoodOlHUDStatusBar : PsxStatusBar
         }
 
         // Weapon bar
-        if (CVar.FindCVar("goh_showweaponbar").GetBool()) { GOHDrawWeaponBar(-406 + coordnudge.X, -17 + coordnudge.Y); }
+        if (CVar.FindCVar("goh_showweaponbar").GetBool()) { GOHDrawWeaponBar(-382 + coordnudge.X, -17 + coordnudge.Y); }
 
         // Top center.
         coordnudge = (0, 0);
