@@ -3,6 +3,7 @@ nosave bool goh_enabled = true;
 nosave handlerclass(GoodOlHUDThemeSettingClamper) int goh_theme = 0;
 nosave handlerclass(GoodOlHUDColorSchemeSettingClamper) int goh_colorscheme = 0;
 nosave bool goh_bargradients = false;
+nosave bool goh_showmaxamounts = true;
 nosave bool goh_alwaysshowinventorycounter = false;
 
 // Bottom Left
