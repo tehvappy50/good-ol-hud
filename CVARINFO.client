@@ -49,3 +49,4 @@ nosave bool goh_showtimertotal = true;
 nosave bool goh_showmonstercounter = true;
 nosave bool goh_showsecretcounter = true;
 nosave bool goh_showitemcounter = true;
+nosave bool goh_swapitemssecrets = false;

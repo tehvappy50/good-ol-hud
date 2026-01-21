@@ -557,8 +557,13 @@ class GoodOlHUDStatusBar : StrifeStatusBar
         // Level stats and keys
         if (!deathmatch)
         {
+            let showmonstercounter = CVar.FindCVar("goh_showmonstercounter").GetBool();
+            let showsecretcounter = CVar.FindCVar("goh_showsecretcounter").GetBool();
+            let showitemcounter = CVar.FindCVar("goh_showitemcounter").GetBool();
+            let swapitemssecrets = CVar.FindCVar("goh_swapitemssecrets").GetBool() && showsecretcounter && showitemcounter;
+
             // Monsters
-            if (CVar.FindCVar("goh_showmonstercounter").GetBool())
+            if (showmonstercounter)
             {
                 coordbase = (-102 + coordnudge.X, 3 + coordnudge.Y);
 
@@ -571,8 +576,10 @@ class GoodOlHUDStatusBar : StrifeStatusBar
             }
 
             // Secrets
-            if (CVar.FindCVar("goh_showsecretcounter").GetBool())
+            if (showsecretcounter)
             {
+                if (swapitemssecrets) { coordnudge.Y += 16; }
+
                 coordbase = (-102 + coordnudge.X, 3 + coordnudge.Y);
 
                 DrawString(GOHmHUDFont, StringTable.Localize("$GOODOLHUD_SECRETS"), coordbase, DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_YELLOW);
@@ -581,11 +588,15 @@ class GoodOlHUDStatusBar : StrifeStatusBar
                 DrawString(GOHmHUDFont, FormatNumber(Level.total_secrets, 1, 5), (coordbase.X + 56, coordbase.Y), DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_LEFT, Font.CR_YELLOW);
 
                 coordnudge.Y += 16;
+
+                if (swapitemssecrets) { coordnudge.Y -= 16; }
             }
 
             // Items
-            if (CVar.FindCVar("goh_showitemcounter").GetBool())
+            if (showitemcounter)
             {
+                if (swapitemssecrets) { coordnudge.Y -= 16; }
+
                 coordbase = (-102 + coordnudge.X, 3 + coordnudge.Y);
 
                 DrawString(GOHmHUDFont, StringTable.Localize("$GOODOLHUD_ITEMS"), coordbase, DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_LIGHTBLUE);
@@ -594,6 +605,8 @@ class GoodOlHUDStatusBar : StrifeStatusBar
                 DrawString(GOHmHUDFont, FormatNumber(Level.total_items, 1, 5), (coordbase.X + 56, coordbase.Y), DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_LEFT, Font.CR_LIGHTBLUE);
 
                 coordnudge.Y += 16;
+
+                if (swapitemssecrets) { coordnudge.Y += 16; }
             }
 
             // Keys
