@@ -195,7 +195,9 @@ class GoodOlHUDStatusBar : HereticStatusBar
 
         // Armor
         let armor = BasicArmor(CPlayer.mo.FindInventory("BasicArmor", true)), hexenarmor = HexenArmor(CPlayer.mo.FindInventory("HexenArmor", true));
-        let currenthexenarmor = hexenarmor.Slots[0] + hexenarmor.Slots[1] + hexenarmor.Slots[2] + hexenarmor.Slots[3] + hexenarmor.Slots[4];
+        int currenthexenarmor;
+
+        if (hexenarmor) { currenthexenarmor = hexenarmor.Slots[0] + hexenarmor.Slots[1] + hexenarmor.Slots[2] + hexenarmor.Slots[3] + hexenarmor.Slots[4]; }
 
         let swaphealtharmor = CVar.FindCVar("goh_swaphealtharmor").GetBool();
 
