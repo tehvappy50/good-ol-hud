@@ -15,6 +15,7 @@ OptionMenu "GoodOlHUDOptions"
     Title "$GOODOLHUD_MENU_TITLE_OPTIONS"
     StaticText "$GOODOLHUD_MENU_SECTION_GENERAL", 1
     Option "$GOODOLHUD_MENU_ENABLED",                    "goh_enabled",                    "YesNo"
+    Option "$GOODOLHUD_MENU_HIDEONDEATH",                "goh_hideondeath",                "GoodOlHUDHideOnDeathSettings"
     Option "$GOODOLHUD_MENU_THEME",                      "goh_theme",                      "GoodOlHUDThemeSettings"
     Option "$GOODOLHUD_MENU_COLORSCHEME",                "goh_colorscheme",                "GoodOlHUDColorSchemeSettings"
     Option "$GOODOLHUD_MENU_BARGRADIENTS",               "goh_bargradients",               "OnOff"
@@ -64,6 +65,13 @@ OptionMenu "GoodOlHUDOptions"
     Option "$GOODOLHUD_MENU_SHOWSECRETCOUNTER",   "goh_showsecretcounter",   "YesNo"
     Option "$GOODOLHUD_MENU_SHOWITEMCOUNTER",     "goh_showitemcounter",     "YesNo"
     Option "$GOODOLHUD_MENU_SWAPITEMSSECRETS",    "goh_swapitemssecrets",    "YesNo"
+}
+
+OptionValue GoodOlHUDHideOnDeathSettings
+{
+    0, "$GOODOLHUD_MENU_HIDEONDEATHSETTING_0"
+    1, "$GOODOLHUD_MENU_HIDEONDEATHSETTING_1"
+    2, "$GOODOLHUD_MENU_HIDEONDEATHSETTING_2"
 }
 
 OptionValue GoodOlHUDThemeSettings

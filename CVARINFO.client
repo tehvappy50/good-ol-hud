@@ -1,5 +1,6 @@
 // General
 nosave bool goh_enabled = true;
+nosave handlerclass(GoodOlHUDHideOnDeathSettingClamper) int goh_hideondeath = 0;
 nosave handlerclass(GoodOlHUDThemeSettingClamper) int goh_theme = 0;
 nosave handlerclass(GoodOlHUDColorSchemeSettingClamper) int goh_colorscheme = 0;
 nosave bool goh_bargradients = false;

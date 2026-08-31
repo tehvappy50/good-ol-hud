@@ -1,5 +1,10 @@
 // General
 
+class GoodOlHUDHideOnDeathSettingClamper : CustomIntCVar
+{
+    override int ModifyValue(name CVarName, int val) { return clamp(val, 0, 2); }
+}
+
 class GoodOlHUDThemeSettingClamper : CustomIntCVar
 {
     override int ModifyValue(name CVarName, int val) { return clamp(val, 0, 1); }
