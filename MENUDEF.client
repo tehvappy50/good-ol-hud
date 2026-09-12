@@ -21,6 +21,7 @@ OptionMenu "GoodOlHUDOptions"
     Option "$GOODOLHUD_MENU_BARGRADIENTS",               "goh_bargradients",               "OnOff"
     Option "$GOODOLHUD_MENU_SHOWMAXAMOUNTS",             "goh_showmaxamounts",             "YesNo"
     Option "$GOODOLHUD_MENU_ALWAYSSHOWINVENTORYCOUNTER", "goh_alwaysshowinventorycounter", "YesNo"
+    Option "$GOODOLHUD_MENU_EFFECTTIMERDISPLAYMODE",     "goh_effecttimerdisplaymode",     "GoodOlHUDEffectTimerDisplayModeSettings"
     StaticText ""
     StaticText "$GOODOLHUD_MENU_SECTION_BOTTOMLEFT", 1
     Option "$GOODOLHUD_MENU_SHOWTEAMNAME",         "goh_showteamname",         "YesNo"
@@ -104,6 +105,12 @@ OptionValue GoodOlHUDColorSchemeSettings
     17, "$GOODOLHUD_MENU_COLORSCHEMESETTING_17"
     18, "$GOODOLHUD_MENU_COLORSCHEMESETTING_18"
     19, "$GOODOLHUD_MENU_COLORSCHEMESETTING_19"
+}
+
+OptionValue GoodOlHUDEffectTimerDisplayModeSettings
+{
+    0, "$GOODOLHUD_MENU_EFFECTTIMERDISPLAYMODESETTING_0"
+    1, "$GOODOLHUD_MENU_EFFECTTIMERDISPLAYMODESETTING_1"
 }
 
 OptionValue GoodOlHUDShowArmorClassSettings
