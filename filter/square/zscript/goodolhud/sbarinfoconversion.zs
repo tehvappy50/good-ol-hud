@@ -90,9 +90,9 @@ class GoodOlHUDSquareStatusBar : DoomStatusBar
 
         if (CPlayer.mo.InvSel && !Level.NoInventoryBar)
         {
-            DrawInventoryIcon(CPlayer.mo.InvSel, (143, 168), DI_DIMDEPLETED|DI_ITEM_OFFSETS);
+            DrawInventoryIcon(CPlayer.mo.InvSel, (143, 168), DI_ITEM_OFFSETS);
 
-            if (CPlayer.mo.InvSel.Amount > 1) { DrawString(mAmountFont, FormatNumber(CPlayer.mo.InvSel.Amount), (172, 198 - mIndexFont.mFont.GetHeight()), DI_TEXT_ALIGN_RIGHT, Font.CR_GOLD); }
+            if (CPlayer.mo.InvSel.Amount != 1) { DrawString(mAmountFont, FormatNumber(CPlayer.mo.InvSel.Amount), (172, 198 - mIndexFont.mFont.GetHeight()), DI_TEXT_ALIGN_RIGHT, Font.CR_GOLD); }
         } else {
             let hasenvirosuit = Powerup(CPlayer.mo.FindInventory("PowerEnviroSuit"));
 
@@ -309,11 +309,11 @@ class GoodOlHUDSquareStatusBar : DoomStatusBar
         {
             if (!isInventoryBarVisible() && (ammotype1 != null || (ammotype2 != null && ammotype2 != ammotype1)))
             {
-                DrawInventoryIcon(CPlayer.mo.InvSel, (-14, invY + 17), DI_ALWAYSSHOWCOUNT|DI_DIMDEPLETED);
+                DrawInventoryIcon(CPlayer.mo.InvSel, (-14, invY + 17));
                 DrawString(mHUDFont, FormatNumber(CPlayer.mo.InvSel.Amount, 3), (-26, invY), DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW);
             }
 
-            DrawInventoryIcon(CPlayer.mo.InvSel, (143, 168), DI_ALWAYSSHOWCOUNT|DI_DIMDEPLETED|DI_ITEM_OFFSETS);
+            DrawInventoryIcon(CPlayer.mo.InvSel, (143, 168), DI_ITEM_OFFSETS);
             DrawString(mAmountFont, FormatNumber(CPlayer.mo.InvSel.Amount, 3), (182, 192), DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW);
         } else {
             DrawImage("SQSTFACE", (-17, -32), DI_TRANSLATABLE|DI_SCREEN_CENTER_BOTTOM|DI_ITEM_OFFSETS);
